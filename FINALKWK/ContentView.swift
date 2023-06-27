@@ -90,8 +90,9 @@ let red = Color(hex: "#FF000044s")
 let green = Color(hex: "#00FF00")
 let blue0 = Color(hex: "0000FF")
 let blue1 = Color(hex: "0000F")
-let purple = Color(hex: "CDB4DB")
-let pink1 = Color(hex: "FFAFCC")
+let purple = Color(hex: " ")
+let purple2 = Color(hex: " ")
+
 // add color in format its done in here ^
 // use in code as: (Color(hex: "CDB4DB"))
 // Example: .background(Color(hex: "CDB4DB"))

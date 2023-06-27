@@ -9,7 +9,14 @@ import SwiftUI
 
 struct HomeScreen: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image("temporary")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fit)
+                .padding(.all)
+            Text("[artist's name]")
+        }
+        
     }
 }
 

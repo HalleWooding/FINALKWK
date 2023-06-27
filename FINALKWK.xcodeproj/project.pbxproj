@@ -15,6 +15,7 @@
 		EE8341F12A4A06FF0023D046 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8341F02A4A06FF0023D046 /* ContentView.swift */; };
 		EE8341F32A4A07030023D046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8341F22A4A07030023D046 /* Assets.xcassets */; };
 		EE8341F62A4A07030023D046 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8341F52A4A07030023D046 /* Preview Assets.xcassets */; };
+		EEA542BA2A4B8EE9009E1C4E /* Inspo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA542B92A4B8EE9009E1C4E /* Inspo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		EE8341F02A4A06FF0023D046 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE8341F22A4A07030023D046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE8341F52A4A07030023D046 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EEA542B92A4B8EE9009E1C4E /* Inspo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				16629CDF2A4B89DD0007819D /* FeaturedArtist.swift */,
 				16629CE32A4B8A300007819D /* Calendar.swift */,
 				16629CE12A4B8A180007819D /* ArtistTools.swift */,
+				EEA542B92A4B8EE9009E1C4E /* Inspo.swift */,
 				EE8341F22A4A07030023D046 /* Assets.xcassets */,
 				EE8341F42A4A07030023D046 /* Preview Content */,
 			);
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA542BA2A4B8EE9009E1C4E /* Inspo.swift in Sources */,
 				EE8341F12A4A06FF0023D046 /* ContentView.swift in Sources */,
 				16629CE42A4B8A300007819D /* Calendar.swift in Sources */,
 				EE8341EF2A4A06FF0023D046 /* FINALKWKApp.swift in Sources */,
