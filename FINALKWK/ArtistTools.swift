@@ -7,9 +7,40 @@
 
 import SwiftUI
 
+
 struct ArtistTools: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                HStack {
+                    NavigationLink(destination: Inspo()) {
+                        Text("Artist's Inspiration")
+                            .foregroundColor(Color.black)
+                            .fontWeight(.bold)
+                            .font(.system(.title3, design: .rounded))
+                            .cornerRadius (10)
+                    }
+                    
+                    .padding()
+                    Text("Learn where this artist found inspiration!")
+                }
+                HStack {
+                    NavigationLink(destination: Inspo()) {
+                        Text("Artist's Materials")
+                            .foregroundColor(Color.black)
+                            .fontWeight(.bold)
+                            .font(.system(.title3, design: .rounded))
+                            .cornerRadius (10)
+                    }
+                    
+                    .padding()
+                    Text ("Learn how")
+                }
+
+
+                
+            }
+        }
     }
 }
 
