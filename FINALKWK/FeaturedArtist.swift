@@ -15,7 +15,7 @@ struct FeaturedArtist: View {
             
             VStack(alignment: .leading, spacing: 20) {
                 
-                Spacer()
+//                Spacer()
                 
                 Image("SonyaClark-photo")
                     .resizable()
@@ -29,6 +29,9 @@ struct FeaturedArtist: View {
                     .font(.callout)
                 
             } .padding()
+                .toolbar {
+                    ToolbarItemGroup(placement: .status) {}
+                }
         }
     }
     
