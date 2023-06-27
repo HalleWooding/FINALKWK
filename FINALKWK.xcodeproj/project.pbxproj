@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16629CDC2A4B897D0007819D /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16629CDB2A4B897D0007819D /* HomeScreen.swift */; };
+		16629CE02A4B89DD0007819D /* FeaturedArtist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16629CDF2A4B89DD0007819D /* FeaturedArtist.swift */; };
+		16629CE22A4B8A180007819D /* ArtistTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16629CE12A4B8A180007819D /* ArtistTools.swift */; };
+		16629CE42A4B8A300007819D /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16629CE32A4B8A300007819D /* Calendar.swift */; };
 		EE8341EF2A4A06FF0023D046 /* FINALKWKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8341EE2A4A06FF0023D046 /* FINALKWKApp.swift */; };
 		EE8341F12A4A06FF0023D046 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8341F02A4A06FF0023D046 /* ContentView.swift */; };
 		EE8341F32A4A07030023D046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8341F22A4A07030023D046 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16629CDB2A4B897D0007819D /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		16629CDF2A4B89DD0007819D /* FeaturedArtist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedArtist.swift; sourceTree = "<group>"; };
+		16629CE12A4B8A180007819D /* ArtistTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTools.swift; sourceTree = "<group>"; };
+		16629CE32A4B8A300007819D /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		EE8341EB2A4A06FF0023D046 /* FINALKWK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FINALKWK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE8341EE2A4A06FF0023D046 /* FINALKWKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FINALKWKApp.swift; sourceTree = "<group>"; };
 		EE8341F02A4A06FF0023D046 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +61,10 @@
 			children = (
 				EE8341EE2A4A06FF0023D046 /* FINALKWKApp.swift */,
 				EE8341F02A4A06FF0023D046 /* ContentView.swift */,
+				16629CDB2A4B897D0007819D /* HomeScreen.swift */,
+				16629CDF2A4B89DD0007819D /* FeaturedArtist.swift */,
+				16629CE32A4B8A300007819D /* Calendar.swift */,
+				16629CE12A4B8A180007819D /* ArtistTools.swift */,
 				EE8341F22A4A07030023D046 /* Assets.xcassets */,
 				EE8341F42A4A07030023D046 /* Preview Content */,
 			);
@@ -138,7 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE8341F12A4A06FF0023D046 /* ContentView.swift in Sources */,
+				16629CE42A4B8A300007819D /* Calendar.swift in Sources */,
 				EE8341EF2A4A06FF0023D046 /* FINALKWKApp.swift in Sources */,
+				16629CE22A4B8A180007819D /* ArtistTools.swift in Sources */,
+				16629CDC2A4B897D0007819D /* HomeScreen.swift in Sources */,
+				16629CE02A4B89DD0007819D /* FeaturedArtist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
