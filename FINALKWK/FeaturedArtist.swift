@@ -9,8 +9,26 @@ import SwiftUI
 
 struct FeaturedArtist: View {
     var body: some View {
-        VStack {
-            Image("")
+        ZStack {
+            Color("Pink")
+                .ignoresSafeArea()
+            
+            VStack(alignment: .leading, spacing: 20) {
+                
+                Spacer()
+                
+                Image("SonyaClark-photo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(10)
+                
+                Text("Sonya Clark")
+                    .font(.title)
+                
+                Text("Description")
+                    .font(.callout)
+                
+            } .padding()
         }
     }
     
