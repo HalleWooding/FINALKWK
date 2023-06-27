@@ -93,7 +93,9 @@ let blue1 = Color(hex: "0000F")
 let purple = Color(hex: "CDB4DB")
 let pink1 = Color(hex: "FFAFCC")
 // add color in format its done in here ^
-// use in a (Color
+// use in code as: (Color(hex: "CDB4DB"))
+// Example: .background(Color(hex: "CDB4DB"))
+
 struct ContentView: View {
     var body: some View {
         VStack {
