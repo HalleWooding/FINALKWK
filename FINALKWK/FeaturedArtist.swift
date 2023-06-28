@@ -13,25 +13,33 @@ struct FeaturedArtist: View {
             Color("Pink")
                 .ignoresSafeArea()
             
-            VStack(alignment: .leading, spacing: 20) {
-                
-//                Spacer()
-                
-                Image("SonyaClark-photo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .cornerRadius(10)
-                
-                Text("Sonya Clark")
-                    .font(.title)
-                
-                Text("Description")
-                    .font(.callout)
-                
-            } .padding()
-                .toolbar {
-                    ToolbarItemGroup(placement: .status) {}
-                }
+            ScrollView (showsIndicators: false) {
+                VStack(alignment: .leading, spacing: 20) {
+                    
+                    //                Spacer()
+                    
+                    Image("SonyaClark-photo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .cornerRadius(10)
+                    
+                    Text("Sonya Clark")
+                        .font(.title)
+                    
+                    Text("Description")
+                        .font(.callout)
+                    
+                    Image("SonyaClark-photo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .cornerRadius(10)
+                    
+                } .padding()
+                    .toolbar {
+                        ToolbarItemGroup(placement: .status) {}
+                    }
+            }
+//            .frame(height: 900)
         }
     }
     

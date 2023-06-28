@@ -99,14 +99,15 @@ let purple2 = Color(hex: " ")
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-            Text ("What's up?")
-        }
-        .padding()
+        NavigationStack {
+            NavigationLink(destination: FeaturedArtist()) {
+                    Text("Featured Artist")
+            }
+            
+            NavigationLink(destination: HomeScreen()) {
+                    Text("Home Screen")
+            }
+            
     }
 }
 
@@ -115,3 +116,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+            }
