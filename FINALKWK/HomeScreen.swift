@@ -10,11 +10,32 @@ import SwiftUI
 struct HomeScreen: View {
     var body: some View {
         VStack(spacing: 20.0) {
+            
             NavigationStack {
+                
+                HStack {
+                    NavigationLink(destination: Calendar()) {
+                        Image(systemName: "calendar.badge.clock")
+                            .foregroundColor(Color("DarkPurple"))
+                            .padding(.all)
+                    }
+                    NavigationLink(destination: FeaturedArtist()) {
+                        Image(systemName: "sparkles")
+                            .foregroundColor(Color("DarkPurple"))
+                            .padding(.all)
+                    }
+                    NavigationLink(destination: Text("system settings")) {
+                        Image(systemName: "gearshape")
+                            .foregroundColor(Color("DarkPurple"))
+                            .padding(.all)
+                    }
+                }
+
             ZStack {
                 
                 Color("Pink")
                     .ignoresSafeArea()
+                
                 VStack(spacing: 20.0) {
                     Image("temporary")
                         .resizable(resizingMode: .stretch)
@@ -28,26 +49,13 @@ struct HomeScreen: View {
                     .shadow(radius: 15)
                     .padding()
             }
-            ZStack {
-                Color("Pink")
-                    .ignoresSafeArea()
-             
-                    HStack {
-                        NavigationLink(destination: Calendar()) {
-                            Image(systemName: "calendar.badge.clock")
-                        NavigationLink (destination: FeaturedArtist()) {
-                            Image(systemName: "paintbrush")
-                            }
-                        }
-                    }
-                }
             }
         }
     }
+}
     
-    struct HomeScreen_Previews: PreviewProvider {
-        static var previews: some View {
-            HomeScreen()
+struct HomeScreen_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeScreen()
         }
     }
-}
