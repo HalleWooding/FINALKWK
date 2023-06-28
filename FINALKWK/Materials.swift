@@ -16,7 +16,9 @@ struct Materials: View {
                 Text("Artist's Materials")
                     .foregroundColor (.white)
                     .font(.largeTitle)
+                Text("Sonya Clark typically works with textiles. So, her supplies include")
             }
+            .padding()
         }
     }
 }
