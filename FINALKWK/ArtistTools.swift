@@ -32,6 +32,8 @@ struct ArtistTools: View {
                         
                         .padding()
                         Text("Learn where this artist found inspiration!")
+                            .foregroundColor (.white)
+                            .font(.system(.title3, design: .serif))
                             .padding()
                     }
                     HStack {
@@ -47,6 +49,8 @@ struct ArtistTools: View {
                         
                         .padding()
                         Text ("Learn what materials this artist gravitates towards!")
+                            .foregroundColor (.white)
+                            .font(.system(.title3, design: .serif))
                             .padding()
                     }
                     
@@ -62,7 +66,9 @@ struct ArtistTools: View {
                         }
                         
                         .padding()
-                        Text ("A palette/palettes of some of the artist's art!")
+                        Text ("A palette/palettes based on some of the artist's art!")
+                            .foregroundColor (.white)
+                            .font(.system(.title3, design: .serif))
                             .padding()
                     }
                     HStack {
@@ -78,6 +84,8 @@ struct ArtistTools: View {
                         
                         .padding()
                         Text ("What niche knowledge can you learn from this artist?")
+                            .foregroundColor (.white)
+                            .font(.system(.title3, design: .serif))
                             .padding()
                     }
                     
