@@ -10,7 +10,9 @@ import SwiftUI
 struct HomeScreen: View {
     var body: some View {
         VStack(spacing: 20.0) {
+            NavigationStack {
             ZStack {
+                
                 Color("Pink")
                     .ignoresSafeArea()
                 VStack(spacing: 20.0) {
@@ -29,7 +31,7 @@ struct HomeScreen: View {
             ZStack {
                 Color("Pink")
                     .ignoresSafeArea()
-                NavigationStack {
+             
                     HStack {
                         NavigationLink(destination: Calendar()) {
                             Image(systemName: "calendar.badge.clock")
