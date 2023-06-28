@@ -17,7 +17,7 @@ struct ArtistTools: View {
                         Text("Artist's Inspiration")
                             .foregroundColor(Color.black)
                             .fontWeight(.bold)
-                            .font(.system(.title3, design: .rounded))
+                            .font(.system(.title3, design: .serif))
                             .cornerRadius (10)
                     }
                     
@@ -29,15 +29,41 @@ struct ArtistTools: View {
                         Text("Artist's Materials")
                             .foregroundColor(Color.black)
                             .fontWeight(.bold)
-                            .font(.system(.title3, design: .rounded))
+                            .font(.system(.title3, design: .serif))
                             .cornerRadius (10)
                     }
                     
                     .padding()
-                    Text ("Learn how")
+                    Text ("Learn what materials this artist gravitates towards!")
+                        .padding()
                 }
 
-
+                HStack {
+                    NavigationLink(destination: Inspo()) {
+                        Text("Artist's Palettes")
+                            .foregroundColor(Color.black)
+                            .fontWeight(.bold)
+                            .font(.system(.title3, design: .serif))
+                            .cornerRadius (10)
+                    }
+                    
+                    .padding()
+                    Text ("A palette/palettes of some of the artist's art!")
+                        .padding()
+                }
+                HStack {
+                    NavigationLink(destination: Inspo()) {
+                        Text("Artist's Tips")
+                            .foregroundColor(Color.black)
+                            .fontWeight(.bold)
+                            .font(.system(.title3, design: .serif))
+                            .cornerRadius (10)
+                    }
+                    
+                    .padding()
+                    Text ("What niche knowledge can you learn from this artist?")
+                        .padding()
+                }
                 
             }
         }
