@@ -9,7 +9,16 @@ import SwiftUI
 
 struct Palette: View {
     var body: some View {
-        Text("Artist's Main Palettes")
+        ZStack {
+            Color ("LightPurple")
+                .ignoresSafeArea()
+            VStack {
+                Text("Artist's Main Palettes")
+                    .foregroundColor (.white)
+                    .font(.largeTitle)
+            }
+        }
+      
     }
     
     struct Palette_Previews: PreviewProvider {

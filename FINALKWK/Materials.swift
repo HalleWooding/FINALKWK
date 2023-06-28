@@ -9,7 +9,15 @@ import SwiftUI
 
 struct Materials: View {
     var body: some View {
-        Text("Artist's Materials")
+        ZStack {
+            Color ("LightPurple")
+                .ignoresSafeArea()
+            VStack {
+                Text("Artist's Materials")
+                    .foregroundColor (.white)
+                    .font(.largeTitle)
+            }
+        }
     }
 }
 

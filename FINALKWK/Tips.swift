@@ -9,7 +9,16 @@ import SwiftUI
 
 struct Tips: View {
     var body: some View {
-        Text("Tips")
+        ZStack {
+            Color ("LightPurple")
+                .ignoresSafeArea()
+            VStack {
+                Text("Tips")
+                    .foregroundColor (.white)
+                    .font(.largeTitle)
+            }
+        }
+        
     }
 }
 

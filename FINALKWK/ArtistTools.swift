@@ -15,19 +15,25 @@ struct ArtistTools: View {
                 HStack {
                     NavigationLink(destination: Inspo()) {
                         Text("Artist's Inspiration")
-                            .foregroundColor(Color.black)
+                            .foregroundColor (.white)
+                            .padding()
+                            .background (Color("LightPurple"))
                             .fontWeight(.bold)
                             .font(.system(.title3, design: .serif))
                             .cornerRadius (10)
+                            
                     }
                     
                     .padding()
                     Text("Learn where this artist found inspiration!")
+                        .padding()
                 }
                 HStack {
-                    NavigationLink(destination: Inspo()) {
+                    NavigationLink(destination: Materials()) {
                         Text("Artist's Materials")
-                            .foregroundColor(Color.black)
+                            .foregroundColor (.white)
+                            .padding()
+                            .background (Color("LightPurple"))
                             .fontWeight(.bold)
                             .font(.system(.title3, design: .serif))
                             .cornerRadius (10)
@@ -39,9 +45,11 @@ struct ArtistTools: View {
                 }
 
                 HStack {
-                    NavigationLink(destination: Inspo()) {
+                    NavigationLink(destination: Palette()) {
                         Text("Artist's Palettes")
-                            .foregroundColor(Color.black)
+                            .foregroundColor (.white)
+                            .padding()
+                            .background (Color("LightPurple"))
                             .fontWeight(.bold)
                             .font(.system(.title3, design: .serif))
                             .cornerRadius (10)
@@ -52,9 +60,11 @@ struct ArtistTools: View {
                         .padding()
                 }
                 HStack {
-                    NavigationLink(destination: Inspo()) {
+                    NavigationLink(destination: Tips()) {
                         Text("Artist's Tips")
-                            .foregroundColor(Color.black)
+                            .foregroundColor (.white)
+                            .padding()
+                            .background (Color("LightPurple"))
                             .fontWeight(.bold)
                             .font(.system(.title3, design: .serif))
                             .cornerRadius (10)

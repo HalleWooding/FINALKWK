@@ -9,7 +9,15 @@ import SwiftUI
 
 struct Inspo: View {
     var body: some View {
-        Text("Artist Inspiration")
+        ZStack {
+            Color ("LightPurple")
+                .ignoresSafeArea()
+            VStack {
+                Text("Artist Inspiration")
+                    .foregroundColor (.white)
+                    .font(.largeTitle)
+            }
+        }
     }
 }
 
