@@ -13,23 +13,23 @@ struct HomeScreen: View {
             
             NavigationStack {
                 
-                HStack {
-                    NavigationLink(destination: Calendar()) {
-                        Image(systemName: "calendar.badge.clock")
-                            .foregroundColor(Color("DarkPurple"))
-                            .padding(.all)
-                    }
-                    NavigationLink(destination: FeaturedArtist()) {
-                        Image(systemName: "sparkles")
-                            .foregroundColor(Color("DarkPurple"))
-                            .padding(.all)
-                    }
-                    NavigationLink(destination: Text("system settings")) {
-                        Image(systemName: "gearshape")
-                            .foregroundColor(Color("DarkPurple"))
-                            .padding(.all)
-                    }
+            HStack {
+                NavigationLink(destination: Calendar()) {
+                    Image(systemName: "calendar.badge.clock")
+                        .foregroundColor(Color("DarkPurple"))
+                        .padding(.all)
                 }
+                NavigationLink(destination: FeaturedArtist()) {
+                    Image(systemName: "sparkles")
+                        .foregroundColor(Color("DarkPurple"))
+                        .padding(.all)
+                }
+                NavigationLink(destination: Text("system settings")) {
+                    Image(systemName: "gearshape")
+                        .foregroundColor(Color("DarkPurple"))
+                        .padding(.all)
+                }
+            }
 
             ZStack {
                 
@@ -37,19 +37,22 @@ struct HomeScreen: View {
                     .ignoresSafeArea()
                 
                 VStack(spacing: 20.0) {
-                    Image("temporary")
+                    Image("sonyaclarkart")
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
                         .padding(.all)
-                    Text("[artist's name]")
-                    Text("[artist's quote]")
+                    Text("“(We) grow very different kinds of hair, but biologically we are the same. Our hair will distinguish us into races, so hair has this way of bringing people together and also talking about racial categorization, racial subjugation, racial creativity, cultural creativity.”")
+                        .multilineTextAlignment(.center)
+                    Text("Sonya Clark")
+                        .font(.title2)
+                        .foregroundColor(Color("DarkPurple"))
                 } .padding()
                     .background(Rectangle() .foregroundColor(.white))
                     .cornerRadius(15)
                     .shadow(radius: 15)
                     .padding()
             }
-            }
+            } 
         }
     }
 }
