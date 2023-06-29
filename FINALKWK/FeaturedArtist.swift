@@ -59,24 +59,50 @@ struct FeaturedArtist: View {
                 .ignoresSafeArea()
             
             ScrollView (showsIndicators: false) {
-                VStack(alignment: .leading, spacing: 20) {
+                
+                VStack(alignment: .center){
+                    Image("SonyaClark-photo")
+//                        .resizable()
+//                        .aspectRatio(contentMode: .fit)
+                        .resizable(resizingMode: .stretch)
+                        .frame(width: 340.0, height: 391.86)
+                                            .aspectRatio(contentMode: .fit)
+                                            .aspectRatio(contentMode: .fit)
+                                            .padding(.top, 15)
+                }
+                
+                VStack(alignment: .leading) {
                     
                     //                Spacer()
                     
-                    Image("SonyaClark-photo")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
+                    
+//                        .padding(.top, 10)
+//                        .border(Color.white, width: 3)
 //                        .cornerRadius(10)
                     
                     Text("Sonya Clark")
                         .font(.title)
+                        .padding(.leading, 10)
+                        .padding(.top, 5)
+                        .padding(.bottom, 5)
                     
-                    Text("Description")
+                    Text("Sonya Clark is Professor of Art at Amherst College in Amherst, Massachusetts. Her work has been exhibited in over 350 museum and galleries in the Americas, Africa, Asia, Europe and Australia. She is the recipient of a United States Artists Fellowship, a Pollock Krasner award, an 1858 Prize, an Art Prize Grand Jurors Award, an Anonymous Was a Woman Award. Most recently, and a Black Rock Senegal Residency Fellowship.")
                         .font(.callout)
+                        .padding(.leading, 10)
+                        .padding(.trailing, 10)
+                        .padding(.bottom, 5)
 // adjust this once you have entered text and toolbar
-                        .padding(.bottom, 100)
+//                        .padding(.bottom, 150)
                     
-                    Spacer()
+//                    VStack(alignment: .center){
+//                        Image("down-arrow")
+//                    }
+                    
+                    HStack{
+                        Spacer()
+                        Image("down-arrow")
+                        Spacer()
+                    }.padding(.bottom, 40)
                     
 //                    testing
 //                    var newArt = ArtDescription(artistWork: "AfroAbe", artistTitle: "Afro Abe II", artistDate: "2012")
@@ -111,9 +137,9 @@ struct FeaturedArtist: View {
                     }
                         .padding(.bottom, 30)
                     
-                    Image("LexieCurl")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
+//                    Image("LexieCurl")
+//                        .resizable()
+//                        .aspectRatio(contentMode: .fit)
                     
 //                    HStack{
 //                        Text("Lexie's Curl")
@@ -125,11 +151,9 @@ struct FeaturedArtist: View {
 //                    }
                                         
                 } .padding()
-                    .toolbar {
-                        ToolbarItemGroup(placement: .status) {}
-                    }
+                
             }
-//            .frame(height: 900)
+            .frame(height: 750)
         }
     }
     

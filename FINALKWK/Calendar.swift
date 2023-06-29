@@ -107,22 +107,32 @@ struct Calendar: View {
                     } .padding(.leading, calendarPadding)
                     .padding(.trailing, calendarPadding)
                     
-                    
                     .toolbar {
-                            ToolbarItemGroup(placement: .bottomBar) {
-                                NavigationLink(destination: ArtistTools()
-                                    .navigationBarBackButtonHidden(true)){
-                                    Image("tools-icon")
-                                }.padding(.leading, 20)
-                                NavigationLink(destination: FeaturedArtist()){
-                                    Image("sparkle-icon")
-                                }.padding(.trailing, 20)
+                    ToolbarItemGroup(placement: .bottomBar) {
+                        ZStack {
                                 
-    //                                ToolbarItem(destination: FeaturedArtist()){
-    //                                    Image(systemName: "bus")
-    //                                }
-                                
+                        HStack {
+                            NavigationLink(destination: HomeScreen()) {
+                                Image(systemName: "house")
+                                    .foregroundColor(Color("Yellow"))
+                            }.padding(.all)
+                                .navigationBarBackButtonHidden(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                            NavigationLink(destination: FeaturedArtist()) {
+                                Image(systemName: "sparkles")
+                                    .foregroundColor(Color("Yellow"))
+                            }.padding(.all)
+                                .navigationBarBackButtonHidden(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                            NavigationLink(destination: ArtistTools()) {
+                                Image(systemName: "wrench.and.screwdriver")
+                                    .foregroundColor(Color("Yellow"))
+                            }.padding(.all)
+                                .navigationBarBackButtonHidden(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                        }
+                            .background(Rectangle() .foregroundColor(Color("DarkPurple")))
+                            .cornerRadius(15)
+                            .shadow(radius: 15)
                             }
+                        }
                     }
                     
                 } // VStack
