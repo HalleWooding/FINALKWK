@@ -90,25 +90,66 @@ let red = Color(hex: "#FF000044s")
 let green = Color(hex: "#00FF00")
 let blue0 = Color(hex: "0000FF")
 let blue1 = Color(hex: "0000F")
-let purple = Color(hex: " ")
-let purple2 = Color(hex: " ")
+let darkPurple = Color(hex: "3F334D")
+let lightPink = Color(hex: "B6A39E")
+let lightPurple = Color(hex: "574B60")
 
 // add color in format its done in here ^
 // use in code as: (Color(hex: "CDB4DB"))
 // Example: .background(Color(hex: "CDB4DB"))
 
+
+
 struct ContentView: View {
     var body: some View {
-        NavigationStack {
-            NavigationLink(destination: FeaturedArtist()) {
-                    Text("Featured Artist")
-            }
-            
-            NavigationLink(destination: HomeScreen()) {
-                    Text("Home Screen")
-            }
-            
-    }
+        
+        NavigationStack{
+            ZStack{
+                LinearGradient(gradient: Gradient(colors: [darkPurple, lightPink]), startPoint: .top, endPoint: .bottom)
+                    .ignoresSafeArea()
+                
+                
+                VStack{
+                    ZStack{
+                        Image("MuseGirl")
+                            .resizable(resizingMode: .stretch)
+                                                    .frame(width: 53.52, height: 150.0)
+                                                .aspectRatio(contentMode: .fit)
+                                                .aspectRatio(contentMode: .fit)
+                        
+                        Text("MUSE")
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                    }
+                    
+                    NavigationLink(destination: LogIn().navigationBarBackButtonHidden(true)){
+                        Text("Log In")
+                            .padding(.leading, 67)
+                            .padding(.trailing, 67)
+                            .padding(.top, 15)
+                            .padding(.bottom, 15)
+                            .foregroundColor(.white)
+                            .background(Color("Pink"))
+                            .shadow(radius: 5)
+                    }
+                    
+                    
+                    NavigationLink(destination: SignUp().navigationBarBackButtonHidden(true)){
+                        Text("Sign Up")
+                            .padding(.leading, 60)
+                            .padding(.trailing, 60)
+                            .padding(.top, 15)
+                            .padding(.bottom, 15)
+                            .foregroundColor(.white)
+                            .background(Color("Pink"))
+                            .shadow(radius: 5)
+                    }
+                    
+                } //VStack
+                
+            } //ZStack
+        } //NavStack
 }
 
 struct ContentView_Previews: PreviewProvider {
