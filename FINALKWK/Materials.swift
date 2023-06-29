@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Materials: View {
     var body: some View {
+        NavigationStack{
         ZStack {
             Color ("LightPurple")
                 .ignoresSafeArea()
@@ -41,6 +42,33 @@ struct Materials: View {
                 }
             }
             .padding()
+        }
+            .toolbar {
+            ToolbarItemGroup(placement: .bottomBar) {
+                ZStack {
+                        
+                HStack {
+                    NavigationLink(destination: Calendar()) {
+                        Image(systemName: "calendar")
+                            .foregroundColor(Color("DarkPurple"))
+                    }.padding(.all).navigationBarBackButtonHidden(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                    NavigationLink(destination: FeaturedArtist()) {
+                        Image(systemName: "sparkles")
+                            .foregroundColor(Color("DarkPurple"))
+                    }.padding(.all)
+                    .navigationBarBackButtonHidden(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                    NavigationLink(destination: ArtistTools()) {
+                        Image(systemName: "wrench.and.screwdriver")
+                            .foregroundColor(Color("DarkPurple"))
+                    }.padding(.all)
+                        .navigationBarBackButtonHidden(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                }
+                    .background(Rectangle() .foregroundColor(Color("Yellow")))
+                    .cornerRadius(15)
+                    .shadow(radius: 15)
+                    }
+                }
+            }
         }
     }
 }

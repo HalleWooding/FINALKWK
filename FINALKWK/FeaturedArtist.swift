@@ -23,36 +23,35 @@
 import SwiftUI
 
 struct FeaturedArtist: View {
-    
-//    func ArtistDescription() {
-//        var Title = " "
-//        var Date = " "
-//
-//        HStack{
-//            print("\(Title)")
-//
-//        }
-//    }
-    
-//    class ArtDescription {
-//        var work = " "
-//        var title = " "
-//        var date = " "
-//
-//        init(artistWork: String, artistTitle: String, artistDate: String) {
-//            work = artistWork
-//            title = artistTitle
-//            date = artistDate
-//        }
-//
-//        func newWork() {
-//            print("artistWork")
-//            print("artistTitle")
-//            print("artistDate")
-//        }
-//    }
-    
-    
+        //{
+        // func ArtistDescription() {
+        //        var Title = " "
+        //        var Date = " "
+        //
+        //        HStack{
+        //            print("\(Title)")
+        //
+        //        }
+        //    }
+        // }
+        //    class ArtDescription {
+        //        var work = " "
+        //        var title = " "
+        //        var date = " "
+        //
+        //        init(artistWork: String, artistTitle: String, artistDate: String) {
+        //            work = artistWork
+        //            title = artistTitle
+        //            date = artistDate
+        //        }
+        //
+        //        func newWork() {
+        //            print("artistWork")
+        //            print("artistTitle")
+        //            print("artistDate")
+        //        }
+        //    }
+        
     var body: some View {
         ZStack {
             Color("Pink")
@@ -103,7 +102,6 @@ struct FeaturedArtist: View {
                         Image("down-arrow")
                         Spacer()
                     }.padding(.bottom, 40)
-                    
 //                    testing
 //                    var newArt = ArtDescription(artistWork: "AfroAbe", artistTitle: "Afro Abe II", artistDate: "2012")
 //                    newArt.newWork()
