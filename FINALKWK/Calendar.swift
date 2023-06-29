@@ -16,6 +16,11 @@ struct Calendar: View {
     
 //  TEXT VARIABLES
     var backgroundColorCalendar = "DarkPurple"
+    var textColorCalendar = Color(red: 240, green: 240, blue: 240)
+    
+// OTHER
+    var imageRadius = CGFloat(40)
+    var imageDimensions = CGFloat(80)
     
     
 //  MONTH OF YEAR FUNCTION
@@ -34,30 +39,76 @@ struct Calendar: View {
     var body: some View {
         NavigationStack{
             ZStack{
-//                Color(backgroundColorCalendar)
-//                    .ignoresSafeArea()
+                Color(backgroundColorCalendar)
+                    .ignoresSafeArea()
+                
                 VStack{
     // MONTH 1
                     HStack{
-                        Text(countingMonths(monthPosition : 0))
+                        Text(countingMonths(monthPosition : 3))
                             .padding(.leading, titlePadding)
                             .padding(.top, titleTop)
+                            .foregroundStyle(textColorCalendar)
                         Spacer()
                     }
                     
                     HStack{
-                        Circle()
+                        ZStack{
+                            Circle()
+                            NavigationLink(destination: FeaturedArtist()){
+                                Image("SonyaClark-photo")
+                                    .resizable(resizingMode: .stretch)
+                                                            .frame(width: imageDimensions, height: imageDimensions)
+                                                        .aspectRatio(contentMode: .fit)
+                                                        .aspectRatio(contentMode: .fit)
+                                                        .cornerRadius(imageRadius)
+                            }
+                        }
+                        
+                        ZStack{
+                            Circle()
+                            Image("RachelRuysch")
+                                .resizable(resizingMode: .stretch)
+                                                        .frame(width: imageDimensions, height: imageDimensions)
+                                                    .aspectRatio(contentMode: .fit)
+                                                    .aspectRatio(contentMode: .fit)
+                                                    .cornerRadius(imageRadius)
+
+                        }
+                        
+                        ZStack{
+                            Circle()
+                            Image("HungLiu")
+                                .resizable(resizingMode: .stretch)
+                                                        .frame(width: imageDimensions, height: imageDimensions)
+                                                    .aspectRatio(contentMode: .fit)
+                                                    .aspectRatio(contentMode: .fit)
+                                                    .cornerRadius(imageRadius)
+
+                        }
+                        
+                        ZStack{
+                            Circle()
+//                                .shadow(radius: 10)
+                            Image("MwangiHutter")
+                                .resizable(resizingMode: .stretch)
+                                                        .frame(width: imageDimensions, height: imageDimensions)
+                                                    .aspectRatio(contentMode: .fit)
+                                                    .aspectRatio(contentMode: .fit)
+                                                    .cornerRadius(imageRadius)
+
+                        }
+                        
+                        
     //                        .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-                        Circle()
-                        Circle()
-                        Circle()
                     } .padding(.leading, calendarPadding)
                     .padding(.trailing, calendarPadding)
     // MONTH 2
                     HStack{
-                        Text(countingMonths(monthPosition : 1))
+                        Text(countingMonths(monthPosition : 2))
                             .padding(.leading, titlePadding)
                             .padding(.top, titleTop)
+                            .foregroundStyle(textColorCalendar)
                         Spacer()
                     }
 
@@ -71,9 +122,10 @@ struct Calendar: View {
                     .padding(.trailing, calendarPadding)
     // MONTH 3
                     HStack{
-                        Text(countingMonths(monthPosition : 2))
+                        Text(countingMonths(monthPosition : 1))
                             .padding(.leading, titlePadding)
                             .padding(.top, titleTop)
+                            .foregroundStyle(textColorCalendar)
                         Spacer()
                     }
 
@@ -88,9 +140,10 @@ struct Calendar: View {
                     
     // MONTH 4
                     HStack{
-                        Text(countingMonths(monthPosition : 3))
+                        Text(countingMonths(monthPosition : 0))
                             .padding(.leading, titlePadding)
                             .padding(.top, titleTop)
+                            .foregroundStyle(textColorCalendar)
                         Spacer()
                     }
 
@@ -112,10 +165,10 @@ struct Calendar: View {
                             ToolbarItemGroup(placement: .bottomBar) {
                                 NavigationLink(destination: ArtistTools()
                                     .navigationBarBackButtonHidden(true)){
-                                    Image("tools-icon")
+                                    Image("tools-icon-white")
                                 }.padding(.leading, 20)
                                 NavigationLink(destination: FeaturedArtist()){
-                                    Image("sparkle-icon")
+                                    Image("sparkle-icon-white")
                                 }.padding(.trailing, 20)
                                 
     //                                ToolbarItem(destination: FeaturedArtist()){
@@ -123,10 +176,10 @@ struct Calendar: View {
     //                                }
                                 
                             }
-                    }
+                    } // Toolbar
                     
                 } // VStack
-            } //ZStack
+            } // ZStack
         } // NavStack
         
     }
