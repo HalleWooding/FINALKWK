@@ -15,7 +15,15 @@ struct Palette: View {
             VStack {
                 Text("Artist's Main Palettes")
                     .foregroundColor (.white)
+                    .font(.system(.largeTitle, design: .serif))
+                    .fontWeight (.bold)
+                    .foregroundColor (.white)
                     .font(.largeTitle)
+                    .multilineTextAlignment(.center)
+                    .padding()
+               
+                
+
             }
         }
       

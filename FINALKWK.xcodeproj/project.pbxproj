@@ -17,8 +17,9 @@
 		EE8341F62A4A07030023D046 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8341F52A4A07030023D046 /* Preview Assets.xcassets */; };
 		EE99EFB72A4CC92C00C52F65 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE99EFB62A4CC92C00C52F65 /* Palette.swift */; };
 		EE99EFB92A4CC94000C52F65 /* Materials.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE99EFB82A4CC94000C52F65 /* Materials.swift */; };
-		EE99EFBB2A4CC95400C52F65 /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE99EFBA2A4CC95400C52F65 /* Tips.swift */; };
+		EE99EFBB2A4CC95400C52F65 /* Achievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE99EFBA2A4CC95400C52F65 /* Achievements.swift */; };
 		EEA542BA2A4B8EE9009E1C4E /* Inspo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA542B92A4B8EE9009E1C4E /* Inspo.swift */; };
+		EEB9BB0E2A4D1CE6007E8056 /* AWAW.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB9BB0D2A4D1CE6007E8056 /* AWAW.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +34,9 @@
 		EE8341F52A4A07030023D046 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE99EFB62A4CC92C00C52F65 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		EE99EFB82A4CC94000C52F65 /* Materials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materials.swift; sourceTree = "<group>"; };
-		EE99EFBA2A4CC95400C52F65 /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
+		EE99EFBA2A4CC95400C52F65 /* Achievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievements.swift; sourceTree = "<group>"; };
 		EEA542B92A4B8EE9009E1C4E /* Inspo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspo.swift; sourceTree = "<group>"; };
+		EEB9BB0D2A4D1CE6007E8056 /* AWAW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWAW.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +75,8 @@
 				16629CDF2A4B89DD0007819D /* FeaturedArtist.swift */,
 				16629CE32A4B8A300007819D /* Calendar.swift */,
 				16629CE12A4B8A180007819D /* ArtistTools.swift */,
-				EE99EFBA2A4CC95400C52F65 /* Tips.swift */,
+				EE99EFBA2A4CC95400C52F65 /* Achievements.swift */,
+				EEB9BB0D2A4D1CE6007E8056 /* AWAW.swift */,
 				EE99EFB82A4CC94000C52F65 /* Materials.swift */,
 				EE99EFB62A4CC92C00C52F65 /* Palette.swift */,
 				EEA542B92A4B8EE9009E1C4E /* Inspo.swift */,
@@ -162,9 +165,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEA542BA2A4B8EE9009E1C4E /* Inspo.swift in Sources */,
-				EE99EFBB2A4CC95400C52F65 /* Tips.swift in Sources */,
+				EE99EFBB2A4CC95400C52F65 /* Achievements.swift in Sources */,
 				EE8341F12A4A06FF0023D046 /* ContentView.swift in Sources */,
 				16629CE42A4B8A300007819D /* Calendar.swift in Sources */,
+				EEB9BB0E2A4D1CE6007E8056 /* AWAW.swift in Sources */,
 				EE8341EF2A4A06FF0023D046 /* FINALKWKApp.swift in Sources */,
 				16629CE22A4B8A180007819D /* ArtistTools.swift in Sources */,
 				16629CDC2A4B897D0007819D /* HomeScreen.swift in Sources */,
