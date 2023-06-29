@@ -110,18 +110,12 @@ struct ContentView: View {
                 
                 
                 VStack{
-                    ZStack{
-                        Image("MuseGirl")
-                            .resizable(resizingMode: .stretch)
-                                                    .frame(width: 53.52, height: 150.0)
-                                                .aspectRatio(contentMode: .fit)
-                                                .aspectRatio(contentMode: .fit)
-                        
-                        Text("MUSE")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
-                    }
+                    Image("MuseTitle")
+                        .resizable(resizingMode: .stretch)
+                        .frame(width: 300, height: 91.25)
+                                            .aspectRatio(contentMode: .fit)
+                                            .aspectRatio(contentMode: .fit)
+                                            .padding(.bottom, 130)
                     
                     NavigationLink(destination: LogIn().navigationBarBackButtonHidden(true)){
                         Text("Log In")
@@ -132,6 +126,7 @@ struct ContentView: View {
                             .foregroundColor(.white)
                             .background(Color("Pink"))
                             .shadow(radius: 5)
+                            .padding(.bottom, 10)
                     }
                     
                     
