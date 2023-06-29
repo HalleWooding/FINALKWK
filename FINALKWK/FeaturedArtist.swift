@@ -5,6 +5,21 @@
 //  Created by Jenny Trexler on 6/27/23.
 //
 
+// RESIZING IMAGES
+//.resizable(resizingMode: .stretch)
+//                        .frame(width: 200.0, height: 200.0)
+//                    .aspectRatio(contentMode: .fit)
+//                    .aspectRatio(contentMode: .fit)
+
+// TAKING OUT BACK BUTTON
+//.navigationBarBackButtonHidden(true)
+// EXAMPLE
+//NavigationLink(destination: ArtistTools()
+//    .navigationBarBackButtonHidden(true)){
+//    Image("tools-icon")
+//}
+
+
 import SwiftUI
 
 struct FeaturedArtist: View {

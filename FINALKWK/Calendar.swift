@@ -8,8 +8,127 @@
 import SwiftUI
 
 struct Calendar: View {
+    
+//  PADDING VARIABLES
+    var calendarPadding = CGFloat(20)
+    var titlePadding = CGFloat(20)
+    var titleTop = CGFloat(10)
+    
+//  TEXT VARIABLES
+    var backgroundColorCalendar = "DarkPurple"
+    
+    
+//  MONTH OF YEAR FUNCTION
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+    var firstMonth = 0
+
+    func countingMonths(monthPosition : Int) -> String{
+        let month = months[firstMonth + monthPosition]
+        return(month)
+    }
+    
+//  
+    
+// BODY
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            ZStack{
+//                Color(backgroundColorCalendar)
+//                    .ignoresSafeArea()
+                VStack{
+    // MONTH 1
+                    HStack{
+                        Text(countingMonths(monthPosition : 0))
+                            .padding(.leading, titlePadding)
+                            .padding(.top, titleTop)
+                        Spacer()
+                    }
+                    
+                    HStack{
+                        Circle()
+    //                        .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                        Circle()
+                        Circle()
+                        Circle()
+                    } .padding(.leading, calendarPadding)
+                    .padding(.trailing, calendarPadding)
+    // MONTH 2
+                    HStack{
+                        Text(countingMonths(monthPosition : 1))
+                            .padding(.leading, titlePadding)
+                            .padding(.top, titleTop)
+                        Spacer()
+                    }
+
+                    HStack{
+                        Circle()
+    //                        .shadow(radius: 10)
+                        Circle()
+                        Circle()
+                        Circle()
+                    } .padding(.leading, calendarPadding)
+                    .padding(.trailing, calendarPadding)
+    // MONTH 3
+                    HStack{
+                        Text(countingMonths(monthPosition : 2))
+                            .padding(.leading, titlePadding)
+                            .padding(.top, titleTop)
+                        Spacer()
+                    }
+
+                    HStack{
+                        Circle()
+    //                        .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                        Circle()
+                        Circle()
+                        Circle()
+                    } .padding(.leading, calendarPadding)
+                    .padding(.trailing, calendarPadding)
+                    
+    // MONTH 4
+                    HStack{
+                        Text(countingMonths(monthPosition : 3))
+                            .padding(.leading, titlePadding)
+                            .padding(.top, titleTop)
+                        Spacer()
+                    }
+
+                    HStack{
+                        ZStack{
+                            Circle()
+                            Image("star-color")
+                        }
+//                        Circle()
+    //                        .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                        Circle()
+                        Circle()
+                        Circle()
+                    } .padding(.leading, calendarPadding)
+                    .padding(.trailing, calendarPadding)
+                    
+                    
+                    .toolbar {
+                            ToolbarItemGroup(placement: .bottomBar) {
+                                NavigationLink(destination: ArtistTools()
+                                    .navigationBarBackButtonHidden(true)){
+                                    Image("tools-icon")
+                                }.padding(.leading, 20)
+                                NavigationLink(destination: FeaturedArtist()){
+                                    Image("sparkle-icon")
+                                }.padding(.trailing, 20)
+                                
+    //                                ToolbarItem(destination: FeaturedArtist()){
+    //                                    Image(systemName: "bus")
+    //                                }
+                                
+                            }
+                    }
+                    
+                } // VStack
+            } //ZStack
+        } // NavStack
+        
     }
 }
 
