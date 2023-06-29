@@ -22,7 +22,24 @@ struct Palette: View {
                     .multilineTextAlignment(.center)
                     .padding()
                
-                
+                Image ("palette1")
+                    .resizable()
+                       .aspectRatio(contentMode: .fit)
+                       .cornerRadius (15)
+                       .padding()
+                Text ("Sonya tends to use more neutral colors in many of her works.")
+                    .foregroundColor (.white)
+                    .font(.system(.title3, design: .serif))
+                    .foregroundColor (.white)
+                    .font(.largeTitle)
+                    .multilineTextAlignment(.center)
+                    .padding()
+                Image ("palette2")
+                    .resizable()
+                       .aspectRatio(contentMode: .fit)
+                       .cornerRadius (15)
+                       .padding()
+
 
             }
         }
