@@ -9,8 +9,8 @@ import SwiftUI
 
 struct LogIn: View {
     
-    @State var username = "Username"
-    @State var password = "Password"
+    var username = " "
+    var password = " "
     @State var inputUser = " "
     @State var inputPass = " "
     
@@ -62,8 +62,8 @@ struct LogIn: View {
                 
                     
                     Button(buttonText) {
-                        if (username == inputUser) && (password == inputPass){
-                            
+                        if (inputUser.count > 2) && (inputPass.count > 2){
+                            buttonText = "Press the icon below"
                         } else {
                             textOpacity = 1
                         }

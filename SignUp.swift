@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SignUp: View {
-    @State var username = "Username"
-    @State var password = "Password"
+    @State var username = " "
+    @State var password = " "
     
     var body: some View {
         
@@ -48,6 +48,7 @@ struct SignUp: View {
                         .padding(.leading, 20)
                         .padding(.trailing, 20)
                         .padding(.bottom, 40)
+                    
                     
                     NavigationLink(destination: HomeScreen().navigationBarBackButtonHidden(true)){
                         Text("Submit")
